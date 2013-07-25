@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/960_12_col.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/farcry-devicetype.js" type="text/javascript"></script>
+  <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+  <script type="text/javascript">
+  $j(function(){
+    $j("#header-search input[name='q']").focus(function(){
+      if (this.value == "Search") this.value = "";
+    });
+    $j("#header-search input[name='q']").blur(function(){
+      if (this.value == "") this.value = "Search";
+    });
+  });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container_12">
+        <div class="grid_3" id="header-logo">
+          <a href="home.html"><img src="css/images/logo.png" alt="Logo"></a>
+        </div>
+        <div class="grid_6" id="header-nav">
+          <nav>
+            <ul id="nav"><li class="home active"><a href="home.html">Home</a></li><li><a href="start.html" target='_self'>Getting Started</a></li><li><a href="typography.html" target='_self'>Typography</a></li><li class="dmNews"><a href="news.html" target='_self'>News</a></li></ul>
+          </nav>
+        </div>
+        <div class="grid_3" id="header-search">
+          <form method="get" action="search.html">
+            <div class="search-box">
+              <input type="hidden" name="type" value="dmSimpleSearch">
+              <input type="text" name="q" class="input" value="Search"><button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div id="main-title">
+      <div class="container_12">
+        <div class="grid_12">
+          <h1>Search</h1>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="container_12">
+        <div class="grid_9 content">
+          <p>Your search for " " returned 4 results.</p>
+          <div class="search-result">
+            <p class="title"><a href="start.html">Getting Started</a></p>
+            <p>The<strong> </strong>FarCry<strong> </strong>Express<strong> </strong>demo<strong> </strong>is<strong> </strong>fully<strong> </strong>functional.<strong> </strong>It’s<strong> </strong>only<strong> </strong>a<strong> </strong>sample<strong> </strong>application,<strong> </strong>but<strong> </strong>it<strong> </strong>should<strong> </strong>give<strong> </strong>you<strong> </strong>a<strong> </strong>feel<strong> </strong>for<strong> </strong>how<strong> </strong>FarCry<strong> </strong>works<strong> </strong>and<strong> </strong>is<strong> </strong>a<strong> </strong>great<strong> </strong>starting<strong> </strong>point<strong> </strong>for<strong> </strong>building<strong> </strong>your<strong> </strong>own<strong> </strong>tailor<strong> </strong>made<strong> </strong>CMS<strong> </strong>solutions. <a href="start.html">Read More</a></p>
+          </div>
+          <div class="search-result">
+            <p class="title"><a href="typography.html">Fandango Theme Typography</a></p>
+            <p>This<strong> </strong>helpful<strong> </strong>little<strong> </strong>page<strong> </strong>features<strong> </strong>all<strong> </strong>the<strong> </strong>typography<strong> </strong>available<strong> </strong>with<strong> </strong>the<strong> </strong>Fandango<strong> </strong>theme. <a href="typography.html">Read More</a></p>
+          </div>
+          <div class="search-result">
+            <p class="title"><a href="news.html">Sample News</a></p>
+            <p>An<strong> </strong>example<strong> </strong>of<strong> </strong>a<strong> </strong>page<strong> </strong>listing<strong> </strong>news<strong> </strong>items. <a href="news.html">Read More</a></p>
+          </div>
+          <div class="search-result">
+            <p class="title"><a href="home.html">FarCry Fandango</a></p>
+            <p>FarCry<strong> </strong>Core<strong> </strong>is<strong> </strong>a<strong> </strong>ColdFusion<strong> </strong>web<strong> </strong>application<strong> </strong>framework,<strong> </strong>ideally<strong> </strong>suited<strong> </strong>for<strong> </strong>building<strong> </strong>tailor<strong> </strong>made<strong> </strong>content<strong> </strong>management<strong> </strong>solutions.<strong> </strong>Supporting<strong> </strong>both<strong> </strong>Adobe<strong> </strong>ColdFusion<strong> </strong>and<strong> </strong>the<strong> </strong>popular<strong> </strong>open<strong> </strong>source<strong> </strong>CFML<strong> </strong>engine<strong> </strong>Railo,<strong> </strong>FarCry<strong> </strong>runs<strong> </strong>in<strong> </strong>virtually<strong> </strong>any<strong> </strong>environment<strong> </strong>thes... <a href="home.html">Read More</a></p>
+          </div>
+        </div>
+        <div class="grid_3 sidebar">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container_12">
+        <div class="grid_8">
+          <p>FarCry Core was lovingly crafted by the Daemonites and the FarCry Community.</p>
+          <p>Copyright Daemon 2003-2013. FarCry Core is dual licensed under the GPL and Commercial Licenses.</p>
+          <p class="poweredby"><a href="http://www.farcrycore.org"><img src="css/images/poweredby.png" alt="Powered by FarCry Core"></a></p>
+          <p class="switch"><a href="" class="fc-switch-device-mobile">View Mobile Site</a></p>
+        </div>
+        <div class="grid_2">
+          <ul id="footernav"><li class="home active"><a href="home.html">Home</a></li><li><a href="start.html" target='_self'>Getting Started</a></li><li><a href="typography.html" target='_self'>Typography</a></li><li class="dmNews"><a href="news.html" target='_self'>News</a></li></ul>
+        </div>
+        <div class="grid_2">
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
